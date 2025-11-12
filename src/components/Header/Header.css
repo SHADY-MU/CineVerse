@@ -1,0 +1,245 @@
+
+.Header > h2 {
+  text-shadow: 6px 0px 4px #000;
+}
+
+.slide-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+/* زرار ال Rent */
+.btn-web {
+  border: 2px solid white !important;
+  color: white !important;
+  background: rgba(193, 214, 163, 0.3) !important;
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-web::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  transition: .5s;
+  z-index: -1;
+}
+
+.btn-web:hover {
+  color: brown !important;
+  border-color: brown !important;
+}
+
+.btn-web:hover::after {
+  width: 100%;
+}
+
+.myswiper{
+  position: relative;
+  overflow: visible !important;
+}
+
+.myswiper .swiper-pagination {
+  position: relative !important;   
+  bottom: 0 !important;           
+  margin-top: 20px;                
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: yellow !important;
+  opacity: 1;
+  transform: scale(1.3);
+  box-shadow: 0 0 10px yellow;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 40px;
+  font-weight: bold;
+  color: yellow;
+  cursor: pointer;
+  user-select: none;
+  opacity: .3;
+}
+
+.custom-prev {
+  left: -3%;
+}
+
+.custom-next {
+  right: -3%;
+}
+
+.custom-prev:hover,
+.custom-next:hover{
+  text-shadow: 5px 8px 10px #000;
+  opacity: 1;
+} 
+
+
+.Header .slide-card-1{
+    background:  linear-gradient(to left , #00000071 , #00000071) , url(../../assets/images/Oppenheimer.jpeg) center/cover no-repeat;
+
+}
+.Header .slide-card-2{
+    background:  linear-gradient(to left , #00000071 , #00000071) , url(../../assets/images/batman.jpeg) center/cover no-repeat;
+
+}
+.Header .slide-card-3{
+    background:  linear-gradient(to left , #00000071 , #00000071) , url(../../assets/images/kk.jpeg) center/cover no-repeat;  
+}
+
+.Header .new-1{
+    background:  linear-gradient(to left , #00000071 , #00000071) , url(../../assets/images/spiderman.jpeg) center/cover no-repeat;
+
+}
+.Header .new-2{
+    background:  linear-gradient(to left , #00000071 , #00000071) , url(../../assets/images/avatar.jpeg) center/cover no-repeat;  
+}
+
+h3.type{
+  -webkit-text-stroke: 3px #000;
+  color: transparent !important;
+  font-size: 40px !important;
+}
+
+.movie-types {
+  height: max-content;
+  padding: 1rem;
+  background: linear-gradient(-135deg, #1c95ff, #ff6666);
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: space-around;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.movie-types:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-types p {
+  flex: 1 1 auto;             
+  min-width: 120px;           
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  -webkit-text-stroke: 2px #000;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.movie-types p:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced responsive design - Header specific */
+@media (max-width: 768px) {
+  .Header {
+    padding: 1rem !important;
+  }
+  
+  .Header h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 300px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 200px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-prev, .custom-next {
+    display: none !important;
+  }
+  
+  .myswiper {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-types {
+    flex-direction: column;  
+    align-items: center;
+    padding: 1rem !important;
+    gap: 0.75rem !important;
+  }
+  .movie-types p {
+    width: 100%;
+    font-size: 1.5rem !important;
+    margin-bottom: 0;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .Header h2 {
+    font-size: 2rem !important;
+  }
+  
+  .type {
+    font-size: 2rem !important;
+  }
+  
+  .Header .row {
+    margin: 0 !important;
+  }
+  
+  .Header .col-lg-8, .Header .col-lg-4 {
+    padding: 0.5rem !important;
+  }
+}
+
+/* Fix for Swiper responsiveness */
+@media (max-width: 767px) {
+  .myswiper {
+    overflow: hidden !important;
+  }
+  
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+/* Better spacing for mobile */
+@media (max-width: 575px) {
+  .Header .row.g-5 {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+  
+  .Header .col-lg-4.d-lg-block.d-flex.gap-2 {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+:root{
+    --background-color: linear-gradient(55deg , #40CCAB , #A16EE0 , #3F3F75 );
+    --nav-color: #23f4cb59;
+    --font-web: "Koh Santepheap", serif;
+}
+
+
+
+body{
+    background: var(--background-color) no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden !important;
+    font-family: var(--font-web);
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure body allows vertical scrolling for sticky to work */
+body {
+    min-height: 100vh;
+}
+
+/* Enhanced focus styles for accessibility */
+*:focus {
+    outline: 2px solid #ffcc00;
+    outline-offset: 2px;
+}
+
+/* Better text selection */
+::selection {
+    background-color: rgba(255, 204, 0, 0.3);
+    color: #000;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-col{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flex-col {
+    align-items: center;
+  }
+}
+
+/* Better responsive typography */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 13px;
+  }
+}
+

@@ -1,0 +1,382 @@
+/* Subscriptions Component Styles */
+.Subscriptions {
+  background: transparent;
+  min-height: 100vh;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.Subscriptions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 50%, rgba(15, 52, 96, 0.8) 100%);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+/* Subscription Cards */
+.subscription-card {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 20px !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  height: 100%;
+}
+
+.subscription-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+.subscription-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* Border Colors matching website theme */
+.border-primary {
+  border-color: #007bff !important;
+}
+
+.border-warning {
+  border-color: #ffcc00 !important;
+}
+
+.border-success {
+  border-color: #28a745 !important;
+}
+
+/* Badges */
+.badge {
+  top: 0px;
+  right: 20px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #ffcc00, #e0a800);
+  color: #000;
+}
+
+.badge-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+/* Card Header */
+.subscription-card .card-header {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px 0 0 !important;
+  position: relative;
+}
+
+.subscription-card .card-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+/* Pricing Display */
+.pricing {
+  position: relative;
+}
+
+.pricing .display-4 {
+  background: linear-gradient(135deg, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features-section {
+  padding: 1.5rem 0;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.feature-item:last-child {
+  border-bottom: none;
+}
+
+.feature-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 0.5rem;
+  border-radius: 8px;
+}
+
+.feature-item i {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Subscription Buttons - matching website button style */
+.subscription-btn {
+  border-radius: 50px !important;
+  padding: 12px 24px !important;
+  font-size: 1.1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent !important;
+  font-weight: bold;
+}
+
+.subscription-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.subscription-btn:hover::before {
+  left: 100%;
+}
+
+.subscription-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Colors matching website theme */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: 2px solid #007bff !important;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  border-color: #0056b3 !important;
+  color: white;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #ffcc00, #e0a800);
+  border: 2px solid #ffcc00 !important;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(135deg, #e0a800, #d39e00);
+  border-color: #e0a800 !important;
+  color: #000;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  border: 2px solid #28a745 !important;
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #1e7e34, #155724);
+  border-color: #1e7e34 !important;
+  color: white;
+}
+
+/* Text Colors */
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-warning {
+  color: #ffcc00 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Additional Info Section */
+.Subscriptions .bg-dark {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(15px);
+}
+
+.Subscriptions .border-warning {
+  border-color: #ffcc00 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Subscriptions {
+    padding: 2rem 0;
+  }
+  
+  .subscription-card {
+    margin-bottom: 2rem;
+  }
+  
+  .badge {
+    right: 15px;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  
+  .pricing .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .subscription-btn {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .subscription-card .card-header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .features-section {
+    padding: 1rem 0;
+  }
+  
+  .feature-item {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subscription-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.subscription-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.subscription-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.subscription-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Hover Effects for Cards */
+.subscription-card:hover .card-header {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.subscription-card:hover .feature-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Loading State */
+.subscription-card.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.subscription-card.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Font Awesome Icons */
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* Custom styling for the main title */
+.Subscriptions .display-4 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Enhanced focus styles for accessibility */
+.subscription-btn:focus {
+  outline: 2px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+.subscription-card,
+.subscription-btn,
+.feature-item,
+.badge {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

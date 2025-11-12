@@ -1,0 +1,277 @@
+/* App-specific styles */
+.App {
+  min-height: 100vh;
+}
+
+.Home , .About , .Services , .Contact{
+    overflow-x: hidden;
+}
+
+/* Enhanced button styles */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Improved card hover effects */
+.slide-card-1:hover,
+.slide-card-2:hover,
+.slide-card-3:hover,
+.new-1:hover,
+.new-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Better typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Improved spacing */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .Header {
+    padding: 2rem 0;
+  }
+  
+  .Header h2 {
+    font-size: 3.5rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 450px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 280px !important;
+  }
+}
+
+/* Medium screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Header {
+    padding: 1.5rem 0;
+  }
+  
+  .Header h2 {
+    font-size: 3rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 400px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 250px !important;
+  }
+}
+
+/* Small screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Header {
+    padding: 1rem 0;
+  }
+  
+  .Header h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 350px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 220px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-prev, .custom-next {
+    font-size: 30px !important;
+  }
+  
+  .custom-prev {
+    left: -2% !important;
+  }
+  
+  .custom-next {
+    right: -2% !important;
+  }
+}
+
+/* Extra small screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .Header {
+    padding: 0.5rem 0;
+  }
+  
+  .Header h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 300px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 200px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-prev, .custom-next {
+    display: none !important;
+  }
+  
+  .movie-types {
+    padding: 1rem !important;
+  }
+  
+  .movie-types p {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .type {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* Very small screens (below 576px) */
+@media (max-width: 575px) {
+  .Header {
+    padding: 0.5rem 0;
+    margin: 0 !important;
+  }
+  
+  .Header h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0.5rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 280px !important;
+    padding: 1rem !important;
+  }
+  
+  .slide-card-1 h3, .slide-card-2 h3, .slide-card-3 h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .slide-card-1 p, .slide-card-2 p, .slide-card-3 p {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 180px !important;
+    margin-bottom: 1rem;
+    padding: 1rem !important;
+  }
+  
+  .new-1 h4, .new-2 h4 {
+    font-size: 1.2rem !important;
+  }
+  
+  .new-1 p, .new-2 p {
+    font-size: 0.8rem !important;
+  }
+  
+  .custom-prev, .custom-next {
+    display: none !important;
+  }
+  
+  .movie-types {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 1rem !important;
+    gap: 0.5rem !important;
+  }
+  
+  .movie-types p {
+    width: 100% !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+    padding: 0.5rem !important;
+  }
+  
+  .type {
+    font-size: 2rem !important;
+    width: 90% !important;
+  }
+  
+  .btn-web {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 4px !important;
+  }
+}
+
+/* Landscape orientation fixes for mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .Header {
+    padding: 0.5rem 0;
+  }
+  
+  .Header h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 200px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 150px !important;
+  }
+  
+  .type {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Fix for very wide screens */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .Header h2 {
+    font-size: 4rem !important;
+  }
+  
+  .slide-card-1, .slide-card-2, .slide-card-3 {
+    height: 500px !important;
+  }
+  
+  .new-1, .new-2 {
+    height: 300px !important;
+  }
+}
