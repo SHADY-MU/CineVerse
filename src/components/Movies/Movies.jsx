@@ -70,6 +70,7 @@ export default function Movies() {
             style={{fontSize:"50px"}}
             data-aos="fade-down"
             data-aos-duration="1000"
+            data-aos-once="true"
           >
             Explore Our <span style={{color:"#ffcc00"}}>Movie Collection</span>
           </h2>
@@ -77,6 +78,7 @@ export default function Movies() {
             className="lead text-white-50"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-once="true"
           >
             Discover amazing films from our extensive library
           </p>
@@ -104,13 +106,14 @@ export default function Movies() {
                       <div className="movie-poster-wrapper">
                         <img 
                           src={movie.poster_path || 'https://via.placeholder.com/300x450?text=No+Image'} 
-                          className="movie-poster" 
+                          className="movie-poster w-100" 
                           alt={movie.original_title || movie.title}
                           loading="lazy"
                           decoding="async"
                           onError={(e) => {
                             e.target.src = 'https://via.placeholder.com/300x450?text=No+Image'
                           }}
+                          style={{  objectFit:"contain" }}
                         />
                         <div className="movie-overlay">
                           <button className="btn-play">

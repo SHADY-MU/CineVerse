@@ -22,12 +22,14 @@ export default function Header() {
     <div className='Header container my-4 py-2 '>
       <h2
         data-aos="fade-down"
+        data-aos-once="true"
         data-aos-duration="1000"
        className=' mb-4 h1 fw-bolder text-white text-capitalize text-center py-2 border-black' style={{fontSize:"50px"}}>Our <span style={{color:"yellow" }}>Movies</span></h2>
       <div className='row g-5'>
         <div className="col-lg-8 col-md-12 "
           data-aos="fade-right"
           data-aos-duration="1000"
+          data-aos-once="true"
         >
           <Swiper
             spaceBetween={50}
@@ -78,6 +80,7 @@ export default function Header() {
         </div>
         <div className="col-lg-4 col-md-12 d-lg-block d-flex flex-column flex-md-row gap-2"
           data-aos="fade-left"
+          data-aos-once="true"
           data-aos-duration="1000">
           <div className=' my-lg-3 new-1 text-center rounded rounded-2 px-3 py-4 d-flex flex-column align-items-center justify-content-between text-light ' style={{height:"250px"}}>
             <h4>SpiderMan</h4>
@@ -97,6 +100,7 @@ export default function Header() {
       </div>
       <div className='mt-5'
         data-aos="fade-down"
+        data-aos-once="true"
         data-aos-duration="1000">
         <h3 className='my-4 w-75 w-md-50 type mx-auto h1 fw-bolder text-center fst-italic'>What We Have</h3>
         <div className='movie-types flex justify-content-between border px-3 px-md-5 rounded rounded-2 border-black border-2 text-white'>

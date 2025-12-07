@@ -120,15 +120,17 @@
 }
 
 h3.type{
-  -webkit-text-stroke: 3px #000;
+  -webkit-text-stroke: 3px #ede6e6;
   color: transparent !important;
+  font-style: italic;
   font-size: 40px !important;
+  text-shadow: 2px 4px 30px #bcc209;
 }
 
 .movie-types {
   height: max-content;
   padding: 1rem;
-  background: linear-gradient(-135deg, #1c95ff, #ff6666);
+  background: linear-gradient(-135deg, #1d70b9, #892121);
   display: flex;
   flex-wrap: wrap;           
   justify-content: space-around;

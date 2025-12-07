@@ -9,7 +9,13 @@
 }
 
 :root{
-    --background-color: linear-gradient(55deg , #40CCAB , #A16EE0 , #3F3F75 );
+    --background-color: linear-gradient(
+  55deg,
+  #154d41,  /* داكن من الأخضر الفيروزي */
+  #402065,  /* بنفسجي داكن */
+  #1b1b31   /* كحلي داكن */
+);
+
     --nav-color: #23f4cb59;
     --font-web: "Koh Santepheap", serif;
 }

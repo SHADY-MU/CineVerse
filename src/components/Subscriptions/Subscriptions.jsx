@@ -5,17 +5,17 @@ function Subscriptions() {
   return (
     <div className='Subscriptions container py-5' id='Subscriptions'>
       <div className="text-center mb-5">
-        <h2 className="display-4 fw-bold text-white mb-3" data-aos="fade-down" data-aos-duration="1000">
+        <h2 className="display-4 fw-bold text-white mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
           Choose Your <span style={{color: "#ffcc00"}}>CineVerse</span> Plan
         </h2>
-        <p className="lead text-white-50" data-aos="fade-up" data-aos-duration="1000">
+        <p className="lead text-white-50" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
           Unlock unlimited entertainment with our premium subscription tiers
         </p>
       </div>
       
       <div className="row g-4">
         {/* Essentials Plan */}
-        <div className="col-lg-4 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1000">
+        <div className="col-lg-4 col-md-6 col-12" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
           <div className='subscription-card card border border-3 border-primary bg-dark h-100 d-flex flex-column'>
             <div className="card-header text-center py-4">
               <div className="badge badge-primary position-absolute">Most Popular</div>
@@ -66,7 +66,7 @@ function Subscriptions() {
         </div>
 
         {/* Extra Plan */}
-        <div className="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000">
+        <div className="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
           <div className='subscription-card card border border-3 border-warning bg-dark h-100 d-flex flex-column'>
             <div className="card-header text-center py-4">
               <div className="badge badge-warning position-absolute">Best Value</div>
@@ -125,7 +125,7 @@ function Subscriptions() {
         </div>
 
         {/* Primary Plan */}
-        <div className="col-lg-4 col-md-8 col-12 offset-md-2 offset-lg-0 " data-aos="fade-left" data-aos-duration="1000">
+        <div className="col-lg-4 col-md-8 col-12 offset-md-2 offset-lg-0 " data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
           <div className='subscription-card card border border-3 border-success bg-dark h-100 d-flex flex-column'>
             <div className="card-header text-center py-4">
               <div className="badge badge-success position-absolute">Premium</div>
@@ -195,7 +195,7 @@ function Subscriptions() {
       {/* Additional Info Section */}
       <div className="row mt-5">
         <div className="col-12">
-          <div className="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div className="text-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
             <div className="bg-dark rounded-4 p-4 border border-2 border-warning">
               <h4 className="text-warning mb-3">Why Choose CineVerse?</h4>
               <div className="row g-3">

@@ -74,6 +74,7 @@ function Contact() {
         <h2
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           className='contact-title'
         >
           Contact With <span className='contact-title-highlight'>Us</span>
@@ -81,6 +82,7 @@ function Contact() {
         <p 
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           data-aos-delay="200"
           className='contact-subtitle'
         >
